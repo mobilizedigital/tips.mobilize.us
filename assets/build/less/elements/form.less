@@ -1,0 +1,51 @@
+form {
+  input {
+    border: 0;
+    margin-bottom: 10px;
+    outline: none;
+    padding-bottom: 10px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 10px;
+    text-indent: 0;
+    width: 100%;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  label {
+    color: @white;
+    display: block;
+    padding-left: 15px;
+    text-indent: -15px;
+  }
+
+  input[type="text"] {
+    text-align: left;
+  }
+
+  input[type="checkbox"] {
+    height: 20px;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    vertical-align: middle;
+    width: 20px;
+  }
+
+  .form--checkbox {
+    color: @black;
+    margin-top: 20px;
+    text-align: left;
+
+    a {
+      text-decoration: underline;
+    }
+  }
+
+  .form--message {
+    color: @black;
+  }
+}

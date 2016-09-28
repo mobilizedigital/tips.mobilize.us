@@ -1,0 +1,26 @@
+.clearfix() {
+  &:before,
+  &:after {
+    content: ' ';
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+// See, https://github.com/dmitryf/elements/blob/master/elements.less
+.transition(@duration:0.3s, @ease: ease-out) {
+  -webkit-transition: all @duration @ease;
+     -moz-transition: all @duration @ease;
+       -o-transition: all @duration @ease;
+          transition: all @duration @ease;
+}
+
+.box-sizing(@sizing: border-box) {
+  -webkit-box-sizing: @sizing;
+     -moz-box-sizing: @sizing;
+      -ms-box-sizing: @sizing;
+          box-sizing: @sizing;
+}

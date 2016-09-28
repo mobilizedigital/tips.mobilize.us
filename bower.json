@@ -1,0 +1,10 @@
+{
+  "name": "www.mobilize.us",
+  "version": "0.0.1",
+  "description": "Mobilize Digital, LLC website.",
+  "dependencies": {
+    "ajaxchimp": "https://github.com/scdoshi/jquery-ajaxchimp.git",
+    "jquery": "latest",
+    "normalize-css": "latest"
+  }
+}

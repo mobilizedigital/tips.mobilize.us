@@ -1,0 +1,18 @@
+.hidden { display: none !important; }
+
+.highlight {
+  background-color: @grey;
+  border-radius: @border-radius;
+  padding-bottom: @padding / 2;
+  padding-left: @padding;
+  padding-right: @padding;
+  padding-top: @padding / 2;
+}
+
+@media (max-width: @browser) {
+  .desktop-only { display: none !important; }
+}
+
+@media (min-width: @browser) {
+  .mobile-only { display: none !important; }
+}

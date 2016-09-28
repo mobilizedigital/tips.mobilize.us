@@ -1,0 +1,36 @@
+.landing {
+
+  .section--one {
+    background-color: @black;
+    color: @white;
+
+    .btn {
+      margin: @padding - 15;
+      min-width: 200px;
+    }
+  }
+
+  .section--three {
+    background-color: @ghost;
+
+    .btn {
+      width: 80%;
+    }
+  }
+
+  .section--three,
+  .section--four {
+
+    .section--wrapper {
+      @media (min-width: @desktop) {
+        max-width: @desktop-lg;
+      }
+    }
+  }
+
+  .section--five {
+    background-color: @black;
+    color: @white;
+    text-align: left;
+  }
+}

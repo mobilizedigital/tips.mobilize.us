@@ -1,0 +1,22 @@
+{
+  "name": "www.mobilize.us",
+  "version": "0.0.1",
+  "description": "Mobilize Digital, LLC website.",
+  "repository": "",
+  "dependencies": {
+    "gulp": "latest",
+    "gulp-add-src": "latest",
+    "gulp-autoprefixer": "latest",
+    "gulp-concat": "latest",
+    "gulp-copy": "latest",
+    "gulp-jshint": "latest",
+    "gulp-less": "latest",
+    "gulp-livereload": "latest",
+    "gulp-minify-css": "latest",
+    "gulp-rename": "latest",
+    "gulp-uglify": "latest",
+    "gulp-watch": "latest",
+    "jshint": "latest",
+    "jshint-stylish": "latest"
+  }
+}

@@ -1,0 +1,29 @@
+.price {
+  border-color: @grey;
+  border-radius: @border-radius;
+  border-style: solid;
+  border-width: 1px;
+  list-style-type: none;
+  margin-bottom: @margin;
+  width: 100%;
+
+  @media (min-width: @browser) {
+    margin-bottom: 0;
+    margin-left: 1%;
+    width: 32%;
+  }
+
+  li {
+    border-bottom-color: @grey;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    padding: @padding - 5;
+    text-align: center;
+
+    h2 {
+      color: @font-color;
+      font-size: @font-size + 7;
+      margin: 0;
+    }
+  }
+}
