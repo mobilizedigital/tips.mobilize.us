@@ -11,7 +11,7 @@ var Mobilize = Mobilize || {};
 
 Mobilize.subscription_form = function subscription_form() {
   var target = $('.form--mailchimp');
-  var url = target.data('action');
+  var url = target.attr('action');
   var msg = $('.form--message');
 
   target.ajaxChimp({
@@ -19,9 +19,11 @@ Mobilize.subscription_form = function subscription_form() {
     callback: function (resp) {
       if (resp.result === 'success') {
         msg.text('Success! Please confirm your email address by clicking the link in the email we just sent you.');
+        msg.removeAttr('style');
         target.find('input[type="text"]').val('');
       } else {
-        msg.text(resp.result.msg);
+        msg.text(resp.msg);
+        msg.removeAttr('style');
       }
     }
   });
